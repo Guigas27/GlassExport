@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GlassExport | Gestão</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section id="loginView" class="login-wrap">
+    <form id="loginForm" class="login-card">
+      <div class="brand-mark">G</div><p class="eyebrow">GESTÃO DE EXPORTAÇÃO</p>
+      <h1>GlassExport</h1><p class="muted">Acesse o painel administrativo</p>
+      <label>Usuário<input id="username" value="admin" required></label>
+      <label>Senha<input id="password" type="password" required></label>
+      <button class="primary full">Entrar no sistema</button>
+      <p id="loginError" class="error"></p>
+      <small>Primeiro acesso: admin / troque-esta-senha</small>
+    </form>
+  </section>
+  <div id="appView" class="app hidden">
+    <aside class="sidebar">
+      <div class="side-brand"><span class="brand-mark small">G</span><div><b>GlassExport</b><small>PAINEL ADMINISTRATIVO</small></div></div>
+      <nav>
+        <button class="nav-item active" data-page="dashboard">▦ <span>Visão geral</span></button>
+        <button class="nav-item" data-page="products">□ <span>Produtos</span></button>
+        <button class="nav-item" data-page="clients">♙ <span>Clientes</span></button>
+        <button class="nav-item" data-page="orders">▤ <span>Pedidos</span></button>
+        <button class="nav-item" data-page="currencies">◎ <span>Moedas e cotações</span></button>
+        <button class="nav-item" data-page="countries">⌖ <span>Países</span></button>
+      </nav>
+      <div class="side-bottom"><div class="status-dot"></div><span>Operação local</span><button id="logoutBtn">Sair ↗</button></div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><div><p class="eyebrow">ESPAÇO DE TRABALHO</p><h2 id="pageTitle">Visão geral</h2></div><div class="user-pill">● Administrador</div></header>
+      <div id="content" class="content"></div>
+    </main>
+  </div>
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body></html>

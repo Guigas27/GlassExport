@@ -1,0 +1,8 @@
+{
+  "name": "gestao-exportadora-vidros",
+  "version": "1.0.0",
+  "description": "Sistema administrativo leve para exportadora de copos de vidro",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": "13.6.0" }
+}
